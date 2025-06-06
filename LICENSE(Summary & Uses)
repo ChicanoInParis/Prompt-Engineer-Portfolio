@@ -1,0 +1,23 @@
+# Licensing Summary for This Repo
+
+This repository contains two types of materials with different licenses:
+
+---
+
+### Code (Python scripts, tooling, automation)
+
+Licensed under the [MIT License](LICENSE) — freely usable, modifiable, and redistributable with attribution. See the `LICENSE` file for full details.
+
+---
+
+### Content (Prompt rubrics, prompt templates, evaluation notes, documentation)
+
+Licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE-CC-BY-4.0.txt). You are free to share and adapt this content with proper attribution.
+
+---
+
+If you use or build upon any part of this repository, please provide appropriate credit to the original author.
+
+---
+
+Feel free to reach out at [rudy@simplesolutions.technology](mailto:rudy@simplesolutions.technology) with any questions or collaboration ideas.
