@@ -36,7 +36,7 @@ I'm currently learning Python (AppBrewery Bootcamp + UofL Cybersecurity Program)
 ## 🌐 Live Demo / Site
 
 You can visit my landing page here:  
-📎 [https://chicanoinparis.github.io](https://chicanoinparis.github.io)
+📎 [Prompt Engineer Portfolio](https://chicanoinparis.github.io/Prompt-Engineer-Portfolio/)
 
 ---
 
