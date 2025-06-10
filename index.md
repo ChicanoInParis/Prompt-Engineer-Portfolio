@@ -41,4 +41,4 @@ title: Home
 <section>
   <h2>Contact</h2>
   <p>Email me at: <a href="mailto:rudy@simplesolutions.technology">rudy@simplesolutions.technology</a></p>
-  <p>GitHub: <a href="https:
+  <p>GitHub: <a href="https://github.com/ChicanoInParis"
