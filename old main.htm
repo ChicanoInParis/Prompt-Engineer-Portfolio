@@ -1,0 +1,137 @@
+take a look at my code and tell me why it isn't working
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompt Engineer Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --accent-color: #005bbb;
+      --header-bg: #222;
+      --header-text: #fff;
+      --card-bg: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    h1, h2 {
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        padding: 1.5rem 1rem;
+      }
+      main {
+        padding: 1rem;
+      }
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rudy Martinez – Prompt Engineer</h1>
+    <p>Exploring LLMs, building better prompts, and testing model behavior at scale.</p>
+  </header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm currently learning Python and diving deep into large language models (LLMs). I run over 30 models locally using LM Studio and design evaluation rubrics to test prompt behavior across domains like math, storytelling, science, and research.
+      </p>
+      <p>
+        My goal is to build thoughtful AI tools that go beyond hype—and share what I learn along the way.
+      </p>
+    </section>
+    <section>
+      <h2>Blog</h2>
+
+      <div class="blog">
+        <h3><a href="/blog/">Lab Notes</a>
+      </h3>
+        <p>Here you’ll find updates, experiments, and commentary on my prompt engineering journey.</p>
+      </div>
+
+      <!-- Add more as you go -->
+    </section>
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3><a href="https://github.com/chicanoinparis/llm-prompt-eval-lab">LLM Prompt Evaluation Lab</a></h3>
+        <p>A collection of test prompts run through 30+ local models, with performance notes, screenshots, and a rubric developed across multiple use cases.</p>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/chicanoinparis/prompt-cookbook">Prompt Cookbook</a></h3>
+        <p>A growing library of tested prompts for summarization, instruction following, creativity, and more—optimized for OpenAI, Claude, DeepSeek, and others.</p>
+      </div>
+
+      <!-- Add more as you go -->
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email me at: <a href="mailto:rudy@simplesolutions.technology">rudy@simplesolutions.technology</a></p>
+      <p>GitHub: <a href="https://github.com/chicanoinparis">github.com/chicanoinparis</a></p>
+    </section>
+  </main>
+</body>
+</html>

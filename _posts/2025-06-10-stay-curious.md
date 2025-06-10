@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Stay Curious, Be Intrepid"
 date: 2025-06-10
 ---
