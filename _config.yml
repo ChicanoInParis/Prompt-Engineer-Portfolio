@@ -1,3 +1,5 @@
 title: Prompt Engineer Portfolio
-description: Exploring LLMs, building better prompts, and testing model behavior at scale.
-theme: jekyll-theme-minimal
+description: Prompt testing, LLM evaluation, and notes from the lab.
+theme: minima
+show_excerpts: true
+
