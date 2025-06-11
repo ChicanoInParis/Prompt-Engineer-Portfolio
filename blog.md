@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Blog
 permalink: /blog/
 ---
@@ -13,4 +13,4 @@ permalink: /blog/
     </li>
   {% endfor %}
 </ul>
-<p><a href="https://chicanoinparis.github.io/Prompt-Engineer-Portfolio/">← Back to Home</a></p>
+<p><a href="{{ site.baseurl }}">← Back to Home</a></p>
