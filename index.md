@@ -17,7 +17,7 @@ title: Home
   <h2>Blog</h2>
 
   <div class="blog">
-    <h3><a href="/blog/">Lab Notes</a></h3>
+    <h3><a href="https://github.com/chicanoinparis/llm-prompt-eval-blog>Lab Notes</a></h3>
     <p>Here you’ll find updates, experiments, and commentary on my prompt engineering journey.</p>
   </div>
 
@@ -41,4 +41,6 @@ title: Home
 <section>
   <h2>Contact</h2>
   <p>Email me at: <a href="mailto:rudy@simplesolutions.technology">rudy@simplesolutions.technology</a></p>
-  <p>GitHub: <a href="https://github.com/ChicanoInParis"
+  <p>GitHub: <a href="https://github.com/ChicanoInParis">https://github.com/chicanoinparis</a></p>
+  </sectiom>
+
