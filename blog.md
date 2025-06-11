@@ -13,4 +13,4 @@ permalink: /blog/
     </li>
   {% endfor %}
 </ul>
-<p><a href="/">← Back to Home</a></p>
+<p><a href="https://chicanoinparis.github.io/Prompt-Engineer-Portfolio/">← Back to Home</a></p>
