@@ -21,4 +21,4 @@ Also, it has been a lot of fun so far.
 So, come along if you want. Maybe I'll give you a good laugh. Maybe I'll inspire you to try something you think you have no business taking on. For me, the worst case scenario is I learn something. Best case scenario? There really is no limit to that.
 
 R
-<p><a href="/">← Back to Home</a></p>
+<p><a href="https://chicanoinparis.github.io/Prompt-Engineer-Portfolio/">← Back to Home</a></p>
