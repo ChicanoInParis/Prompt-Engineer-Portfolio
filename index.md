@@ -17,7 +17,7 @@ title: Home
   <h2>Blog</h2>
 
   <div class="blog">
-    <h3><a href="https://github.com/chicanoinparis/llm-prompt-eval-blog>Lab Notes</a></h3>
+    <h3><a href="https://github.io/chicanoinparis/llm-prompt-eval-blog>Lab Notes</a></h3>
     <p>Here you’ll find updates, experiments, and commentary on my prompt engineering journey.</p>
   </div>
 
@@ -28,12 +28,12 @@ title: Home
   <h2>Projects</h2>
 
   <div class="project">
-    <h3><a href="https://github.com/chicanoinparis/llm-prompt-eval-lab">LLM Prompt Evaluation Lab</a></h3>
+    <h3><a href="https://github.io/chicanoinparis/llm-prompt-eval-lab">LLM Prompt Evaluation Lab</a></h3>
     <p>A collection of test prompts run through 30+ local models, with performance notes, screenshots, and a rubric developed across multiple use cases.</p>
   </div>
 
   <div class="project">
-    <h3><a href="https://github.com/chicanoinparis/prompt-cookbook">Prompt Cookbook</a></h3>
+    <h3><a href="https://github.io/chicanoinparis/prompt-cookbook">Prompt Cookbook</a></h3>
     <p>A growing library of tested prompts for summarization, instruction following, creativity, and more—optimized for OpenAI, Claude, DeepSeek, and others.</p>
   </div>
 </section>
@@ -41,6 +41,6 @@ title: Home
 <section>
   <h2>Contact</h2>
   <p>Email me at: <a href="mailto:rudy@simplesolutions.technology">rudy@simplesolutions.technology</a></p>
-  <p>GitHub: <a href="https://github.com/ChicanoInParis">https://github.com/chicanoinparis</a></p>
+  <p>GitHub: <a href="https://github.com/ChicanoInParis">Chicano In Paris</a></p>
   </sectiom>
 
