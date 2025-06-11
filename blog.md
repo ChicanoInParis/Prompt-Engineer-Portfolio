@@ -13,3 +13,4 @@ permalink: /blog/
     </li>
   {% endfor %}
 </ul>
+<p><a href="/">← Back to Home</a></p>
