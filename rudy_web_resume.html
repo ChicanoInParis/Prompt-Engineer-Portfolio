@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudy Martinez - Entrepreneur & AI Specialist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .name {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #fff, #e8f4fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .title {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-item i {
+            font-size: 1.2rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            border-radius: 2px;
+        }
+        
+        .summary {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #444;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+        .ventures-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .venture-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e3e8ee;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .venture-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+        
+        .venture-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .venture-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .venture-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .venture-period {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .venture-description {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .achievement-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .achievement-title {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .achievement-list {
+            list-style: none;
+        }
+        
+        .achievement-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .achievement-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .tech-category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e3e8ee;
+            transition: transform 0.3s ease;
+        }
+        
+        .tech-category:hover {
+            transform: translateY(-3px);
+        }
+        
+        .tech-title {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .tech-list {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .experience-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #3498db, #2ecc71);
+        }
+        
+        .experience-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-left: 1rem;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            background: #3498db;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #3498db;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .venture-header {
+                flex-direction: column;
+            }
+            
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">Rudy Martinez</h1>
+                <p class="title">Entrepreneur | Technical Solutions Architect | AI/ML Specialist</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>104 Rue Michel Ange, Paris, 75016</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+33 7 81 55 46 40</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>rudy@simplesolutions.technology</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="summary">
+                <span class="highlight">Serial entrepreneur and technical innovator</span> with 12+ years of experience building and scaling businesses across entertainment, technology services, and AI solutions. Proven track record of transforming ideas into profitable ventures, from managing a nationwide stand-up comedy career to founding SimpleSolutions.technology, serving 15+ business clients with 100% project completion rates. Currently pioneering AI automation solutions using <span class="highlight">Large Language Models (LLMs) and Python</span>, combining entrepreneurial vision with cutting-edge technical expertise.
+                <br><br>
+                <strong>Core Value Proposition:</strong> Bridges the gap between complex technology and business outcomes, delivering scalable solutions that drive measurable growth and operational efficiency.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Entrepreneurial Ventures</h2>
+            
+            <div class="ventures-grid">
+                <div class="venture-card">
+                    <div class="venture-header">
+                        <h3 class="venture-title">Founder & CEO | SimpleSolutions.technology</h3>
+                        <span class="venture-period">January 2022 - Present</span>
+                    </div>
+                    <p class="venture-description">Built a comprehensive technology services company from concept to operation, serving small-to-medium businesses across multiple industries.</p>
+                    
+                    <div class="achievements-grid">
+                        <div class="achievement-category">
+                            <div class="achievement-title">Business Achievements</div>
+                            <ul class="achievement-list">
+                                <li>Founded and scaled remote-first business serving 15+ active clients</li>
+                                <li>98% client retention rate with consistent revenue growth</li>
+                                <li>100% project completion rate across $500-$5,000 engagements</li>
+                                <li>Reduced client operational costs by 25%</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-category">
+                            <div class="achievement-title">Technical Leadership</div>
+                            <ul class="achievement-list">
+                                <li>Architected 50+ WordPress solutions with custom functionality</li>
+                                <li>Implemented IoT ecosystems and network infrastructure</li>
+                                <li>Currently integrating LLM-powered solutions and Python automation</li>
+                                <li>Reduced client administrative overhead by 40%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="venture-card">
+                    <div class="venture-header">
+                        <h3 class="venture-title">Independent Entertainment Entrepreneur</h3>
+                        <span class="venture-period">June 2010 - July 2015</span>
+                    </div>
+                    <p class="venture-description">Self-funded and managed a touring entertainment business on the national stand-up comedy circuit, demonstrating exceptional entrepreneurial resilience and market adaptability.</p>
+                    
+                    <div class="achievements-grid">
+                        <div class="achievement-category">
+                            <div class="achievement-title">Business Operations</div>
+                            <ul class="achievement-list">
+                                <li>Independently booked and executed 200+ performances</li>
+                                <li>Managed complex logistics including travel and marketing</li>
+                                <li>Built strategic partnerships with comedy clubs nationwide</li>
+                                <li>Developed personal brand and audience through networking</li>
+                            </ul>
+                        </div>
+                        <div class="achievement-category">
+                            <div class="achievement-title">Key Skills Developed</div>
+                            <ul class="achievement-list">
+                                <li>Risk assessment and financial management</li>
+                                <li>Customer relationship management</li>
+                                <li>Performance under pressure and adaptability</li>
+                                <li>Self-directed marketing and business development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Expertise & Innovation</h2>
+            
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <div class="tech-title">
+                        <i class="fas fa-robot"></i>
+                        Current Focus: AI/ML & Automation
+                    </div>
+                    <div class="tech-list">
+                        <strong>Large Language Models (LLMs):</strong> Developing custom AI solutions for business process automation<br>
+                        <strong>Python Development:</strong> Building scalable automation tools and data processing pipelines<br>
+                        <strong>AI Integration:</strong> LLM-powered chatbots, content generation, workflow optimization
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <div class="tech-title">
+                        <i class="fas fa-code"></i>
+                        Programming & Development
+                    </div>
+                    <div class="tech-list">
+                        Python, JavaScript ES6, Node.js, React.js, HTML5/CSS3, WordPress Architecture
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <div class="tech-title">
+                        <i class="fas fa-brain"></i>
+                        AI/ML Technologies
+                    </div>
+                    <div class="tech-list">
+                        LLM APIs, Natural Language Processing, Automation Frameworks, Machine Learning Pipelines
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <div class="tech-title">
+                        <i class="fas fa-server"></i>
+                        Infrastructure & Systems
+                    </div>
+                    <div class="tech-list">
+                        IoT Configuration, Network Engineering, CRM Integration, Cloud Solutions, Project Management Platforms
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="venture-header">
+                        <h3 class="venture-title">Broadband Specialist | Mediacom</h3>
+                        <span class="venture-period">July 2021 - December 2021</span>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>Delivered Level 2 technical support with 95% first-contact resolution rate</li>
+                        <li>Managed complex network troubleshooting for residential and business clients</li>
+                        <li>Developed systematic approaches to technical problem-solving under pressure</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="venture-header">
+                        <h3 class="venture-title">Library Technology Manager | Tyndall Air Force Base</h3>
+                        <span class="venture-period">July 2015 - July 2021</span>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>Managed technology operations for 200+ daily users with 99% system uptime</li>
+                        <li>Implemented proactive maintenance protocols reducing disruptions by 30%</li>
+                        <li>Coordinated cross-functional technology initiatives and asset management</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="venture-header">
+                        <h3 class="venture-title">Administrative Operations Specialist | National Geographic</h3>
+                        <span class="venture-period">October 2007 - February 2010</span>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>Supported C-level executive operations and strategic project coordination</li>
+                        <li>Managed logistics for nationwide research initiatives (100+ participants)</li>
+                        <li>Delivered data analysis and market research with 99.8% accuracy standards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Key Differentiators</h2>
+            <div class="achievements-grid">
+                <div class="achievement-category">
+                    <div class="achievement-title">✅ Proven Entrepreneur</div>
+                    <p>Successfully launched and scaled multiple businesses across different industries</p>
+                </div>
+                <div class="achievement-category">
+                    <div class="achievement-title">✅ Technical Innovation</div>
+                    <p>Combining traditional web development with cutting-edge AI/ML technologies</p>
+                </div>
+                <div class="achievement-category">
+                    <div class="achievement-title">✅ Remote Leadership</div>
+                    <p>8+ years managing distributed teams and client relationships across multiple time zones</p>
+                </div>
+                <div class="achievement-category">
+                    <div class="achievement-title">✅ Business Acumen</div>
+                    <p>Demonstrated ability to identify market opportunities and execute profitable solutions</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">98%</div>
+                    <div class="metric-label">Client retention rate across 3+ years</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Project completion rate with zero missed deadlines</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">25%</div>
+                    <div class="metric-label">Average improvement in client operational efficiency</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">200+</div>
+                    <div class="metric-label">Successful project deliveries across multiple verticals</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add smooth scrolling and animation effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate sections on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'all 0.6s ease-out';
+                observer.observe(section);
+            });
+
+            // Add hover effects to contact items
+            document.querySelectorAll('.contact-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
