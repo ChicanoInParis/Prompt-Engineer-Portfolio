@@ -3,7 +3,6 @@ layout: default
 title: "My First Dive Into Testing Local LLMS (and Accidentally Learning Data Science)"
 date: 2025-06-19
 ---
-
 # 🧪 My First Dive into Testing Local LLMs (and Accidentally Learning Data Science)
 
 Hi. Let me start by saying I am not a data scientist. I’m just a guy who is naturally curious and a bit intrepid. So when I read somewhere that I could host LLMs *locally*—without giving my data away every time I used ChatGPT or another AI—I decided to try it.
@@ -58,6 +57,7 @@ Then I used **matplotlib** to visualize the results in a simple bar chart.
 
 Here’s what the core of my notebook looks like:
 
+<pre>
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -80,7 +80,8 @@ plt.ylabel('Average Score')
 plt.xticks(rotation=90)
 plt.tight_layout()
 plt.show()
-
+```
+</pre>
 It’s simple, but it works. With this, I can easily see which models did best overall, and begin comparing them based on my own needs—not just benchmark scores designed for research labs.
 
 ⸻
