@@ -28,7 +28,7 @@ title: Home
   <h2>Projects</h2>
 
   <div class="project">
-    <h3><a href="https://github.io/chicanoinparis/Prompt-Engineer-Portfolio-lab">LLM Prompt Evaluation Lab</a></h3>
+    <h3><a href="https://github.com/ChicanoInParis/LLM-Prompt-Evauation-Lab">LLM Prompt Evaluation Lab</a></h3>
     <p>A collection of test prompts run through 30+ local models, with performance notes, screenshots, and a rubric developed across multiple use cases.</p>
   </div>
 
