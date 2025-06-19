@@ -102,7 +102,7 @@ There will be more tests soon. I’m currently enrolled in bootcamps for both Py
 
 If you’ve got ideas, suggestions, or critiques—send them my way. I’m learning. But I’m also building. And this is just the beginning.
 
-You can find it here: <a href="{{https://github.com/ChicanoInParis/LLM-Prompt-Evauation-Lab}}">LLM Prompt Evaluation Lab</a>
+You can find it here: <a href="https://github.com/ChicanoInParis/LLM-Prompt-Evauation-Lab">LLM Prompt Evaluation Lab</a>
 
 R
 <p><a href="{{ site.baseurl }}">← Back to Home</a></p>
